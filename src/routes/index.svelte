@@ -1,5 +1,4 @@
 <script>
-	//import Navigation from "src/components/Navigation.svelte";
 	import Navigation from '../components/Navigation.svelte';
 </script>
 
@@ -8,4 +7,9 @@
 </svelte:head>
 
 <Navigation />
-<h1>Hello and welcome to my site!</h1>
+<p>
+	Crypto Lab is a one stop shop for cryptographic enciphering and deciphering. The intal plan is to
+	start with simple ciphers, such as the Caesar cipher and vigenere cipher. Later, automated
+	decrpytion tools will be added, such as providing each possability for the Caesar cipher, and
+	later more complex dictionary style attacks.
+</p>
