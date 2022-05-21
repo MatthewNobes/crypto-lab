@@ -1,10 +1,13 @@
 <script>
 	import Navigation from '../components/Navigation.svelte';
+	import Header from '../components/Header.svelte';
 </script>
 
 <svelte:head>
 	<title>Crypto Lab</title>
 </svelte:head>
+
+<Header />
 
 <Navigation />
 <p>
