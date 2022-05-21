@@ -1,5 +1,8 @@
 <script>
 	import Navigation from '../components/Navigation.svelte';
+	const encrypt = () => {
+		console.log('trigger');
+	};
 </script>
 
 <svelte:head>
@@ -8,3 +11,10 @@
 
 <h1>Caesar Cipher</h1>
 <Navigation />
+
+<div>
+	<p>Enter your text to encrypt here:</p>
+	<textarea id="input" />
+	<textarea id="output" readonly />
+	<button on:click={encrypt}>Encrypt</button>
+</div>
