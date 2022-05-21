@@ -1,9 +1,7 @@
 <script>
 	import Navigation from '../components/Navigation.svelte';
 	import Header from '../components/Header.svelte';
-	const encrypt = () => {
-		console.log('trigger');
-	};
+	import { caesarEncipher } from '../ciphers/caesar-cipher/caesarEncipher';
 </script>
 
 <svelte:head>
@@ -16,7 +14,10 @@
 
 <div>
 	<p>Enter your text to encrypt here:</p>
-	<textarea id="input" />
+	<textarea id="message" name="message" />
+	<p>Please select a key to shift by:</p>
+	<input type="number" id="key" name="key" min="0" max="25" />
+	<p>Result</p>
 	<textarea id="output" readonly />
-	<button on:click={encrypt}>Encrypt</button>
+	<button on:click={() => caesarEncipher(key.value, message.value)}>Encrypt</button>
 </div>
