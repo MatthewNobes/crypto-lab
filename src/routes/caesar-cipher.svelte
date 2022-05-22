@@ -17,7 +17,10 @@
 	<textarea id="message" name="message" />
 	<p>Please select a key to shift by:</p>
 	<input type="number" id="key" name="key" min="0" max="25" />
+	<p>Please note, shifting by a key greater than 25 will act as a shift from 0.</p>
 	<p>Result</p>
-	<textarea id="output" readonly />
-	<button on:click={() => caesarEncipher(key.value, message.value)}>Encrypt</button>
+	<textarea readonly id="ciphertext" name="ciphertext" />
+	<button on:click={() => (ciphertext.value = caesarEncipher(parseInt(key.value), message.value))}
+		>Encrypt</button
+	>
 </div>
