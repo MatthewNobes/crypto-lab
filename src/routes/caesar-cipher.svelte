@@ -8,8 +8,7 @@
 	<title>Caesar Cipher</title>
 </svelte:head>
 
-<Header />
-<h1>Caesar Cipher</h1>
+<Header headerText={'Caesar Cipher'} />
 <Navigation />
 
 <div>
