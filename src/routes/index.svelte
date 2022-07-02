@@ -1,6 +1,8 @@
 <script>
 	import Navigation from '../components/Navigation.svelte';
 	import Header from '../components/Header.svelte';
+
+	import '../app.css';
 </script>
 
 <svelte:head>
