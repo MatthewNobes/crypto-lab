@@ -1,6 +1,5 @@
 <script>
-	import Navigation from '../components/Navigation.svelte';
-	import Header from '../components/Header.svelte';
+	import PageHead from '../components/PageHead/PageHead.svelte';
 	import Home from '../features/Home/Home.svelte';
 	import '../app.css';
 </script>
@@ -9,7 +8,5 @@
 	<title>Crypto Lab</title>
 </svelte:head>
 
-<Header headerText={'Crypto Lab'} />
-
-<Navigation />
+<PageHead pageTitle="Crypto Lab" />
 <Home />

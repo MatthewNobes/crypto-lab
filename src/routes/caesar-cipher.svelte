@@ -1,6 +1,5 @@
 <script>
-	import Navigation from '../components/Navigation.svelte';
-	import Header from '../components/Header.svelte';
+	import PageHead from '../components/PageHead/PageHead.svelte';
 	import CaesarCipher from '../features/CaesarCipher/CaesarCipher.svelte';
 	import '../app.css';
 </script>
@@ -9,6 +8,5 @@
 	<title>Caesar Cipher</title>
 </svelte:head>
 
-<Header headerText={'Caesar Cipher'} />
-<Navigation />
+<PageHead pageTitle="Caesar Cipher" />
 <CaesarCipher />

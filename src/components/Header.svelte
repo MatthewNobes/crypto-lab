@@ -1,6 +1,6 @@
 <script>
 	export /**
-	 * @type {any}
+	 * @type {string}
 	 */
 	let headerText;
 </script>
